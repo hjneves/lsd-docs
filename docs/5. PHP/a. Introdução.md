@@ -3,7 +3,6 @@ Sendo uma linguagem que corre no servidor web, ela vai permitir o acesso às div
 É desta forma que conseguimos por exemplo criar uma página de perfil de utilizador genérica, ou seja, que vai ser usada para apresentar a informação de qualquer utilizador 
 Linguagem de servidor
 
-
 ![](B2036C67FEB3594A9EA2FD4EFDB0FD63.jpg)
 
 O PHP ainda tem uma percentagem de utilização significativa, cerca de [77%](https://w3techs.com/technologies/overview/programming_language) dos sites com componente de servidor.

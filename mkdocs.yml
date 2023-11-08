@@ -51,9 +51,6 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
 
 
 extra_javascript:
