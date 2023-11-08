@@ -1,6 +1,4 @@
-
 Vamos começar por ver como é a estrutura de uma página html e as principais tags.
-
 ## Ferramentas
 
 ### Editores de código online

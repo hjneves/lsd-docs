@@ -50,7 +50,10 @@ markdown_extensions:
 
 plugins:
   - search
-  - roamlinks 
+  - roamlinks
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 
 extra_javascript:
