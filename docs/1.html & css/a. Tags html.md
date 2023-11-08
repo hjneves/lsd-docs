@@ -1,3 +1,6 @@
+
+Vamos começar por ver como é a estrutura de uma página html e as principais tags.
+
 # Editores de código online
 https://codepen.io
 https://codesandbox.io
