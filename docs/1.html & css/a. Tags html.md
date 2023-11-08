@@ -1,7 +1,7 @@
 
 Vamos começar por ver como é a estrutura de uma página html e as principais tags.
 
-# Editores de código online
+## Editores de código online
 https://codepen.io
 https://codesandbox.io
 
@@ -11,7 +11,7 @@ Podem usar para realizar testes rápidos, enviar exemplos e tirar dúvidas
 Para validar compatibilidade das tags HTML e propriedades CSS3 nos diversos browsers e versões
 https://caniuse.com
 
-# Instalações
+## Instalações
 
 Visual Studio Code
 https://code.visualstudio.com
@@ -24,12 +24,12 @@ Instalar a partir do VS code
 Live Server - para um ambiente de live reloading
 
 
-# Estrutura de uma página
+## Estrutura de uma página
 
 Vamos olhara para a seguinte página html
 www.example.com
 
-## Header
+### Header
 
 ```html
 <!DOCTYPE html>
@@ -52,7 +52,7 @@ www.example.com
 </head>
 ```
 
-## Body
+### Body
 
 ```html
 <body> <!-- corpo da página web, conteúdo efectivo da página -->
@@ -66,7 +66,7 @@ www.example.com
 `index.html` - por convenção a página raiz de um site web
 Ou seja ao abrir o endereço `www.example.com` estamos o servidor web vai tentar encontrar o ficheiro `index.html` para abrir.
 
-# DIV’s e semântica em HTML5
+### DIV’s e semântica em HTML5
 
 A tag `div` é a base da organização estrutural de uma página html. Todo o conteúdo deverá estar inserido em `div´s`. As `div`podem conter outras `div`, criando uma estrutura hierárquica de pais para filhos, onde a div que engloba toda a página normalmente designa-se de wrapper e na zona mais específica temos os blocos de texto e imagens. 
 
@@ -76,14 +76,14 @@ Por exemplo, um parágrafo inserido numa `div`
 Esta é uma estrutura genérica de uma pagina web, usando tags html5. Estas tags são `div's` com uma determinada semântica associada que é reconhecida em termos de SEO.
 
 ![[Pasted image 20221115190049.png]]
-# Header Tags
+## Header Tags
 
 As tags de heading reconhecidas são 
 `<h1> ..... <h6>` 
 
 Em paginas reais normalmente temos um h1 alguns h2 e h3
 
-# Parágrafos
+## Parágrafos
 
 Se tentarmos escrever texto diretamente nas `div` verificamos que não se consegue separar linhas e os espaços são ignorados ignora espaços
 
@@ -93,7 +93,7 @@ Usar `<br />` para quebrar linha sem parágrafo
 
 `<hr />`  horizontal rule criar uma linha horizontal
 
-# Tags de decoração
+## Tags de decoração
 
 `<strong>` texto a bold 
 
@@ -103,7 +103,7 @@ Usar `<br />` para quebrar linha sem parágrafo
 
 `<strike>` texto rasurado
 
-# Lista não ordenada
+## Lista não ordenada
 
 ```html
 <ul>
@@ -112,7 +112,7 @@ Usar `<br />` para quebrar linha sem parágrafo
 </ul>
 ```
 
-# Lista ordenada
+## Lista ordenada
 
 ```html
 <ol> 
@@ -121,7 +121,7 @@ Usar `<br />` para quebrar linha sem parágrafo
 </ol>
 ```
 
-# Imagens
+## Imagens
 
 ```html
 <img src="images/passaro.jpg" /> <!--self closed tag e um ficheiro local, tem por base a director do index.html -->
@@ -139,7 +139,7 @@ A tag de imagem `<img>` é uma self-closed tag e usa o atributo `src` para indic
 O atributo `alt` indica aos motores de pesquisa que imagem está a ser apresentada, tonando-se importante que esteja preenchida em todas as tags `<img>` relevando para SEO. 
 
 
-# Artigos
+## Artigos
 
 Tag html5 que permitem organizar conteúdos de notícias, posts, ..
 
@@ -150,7 +150,7 @@ Tag html5 que permitem organizar conteúdos de notícias, posts, ..
 </article>
 ```
 
-# Forms
+## Forms
 
 Os forms são as zonas de uma página que podem receber dados do utilizador. Existem vários tipos de tags que podem ser usadas para recolher informação, campo de input, text area, check box, radio button, drop down box e button.
 
@@ -186,7 +186,7 @@ O evento de `submit` desencadeado por um botão (ex. input do tipo submit) recol
 </form>
 ```
 
-# Links
+## Links
 
 ```html
 <a href="http://www.google.com">Google</a> link externo é necessário colocar http
@@ -200,7 +200,7 @@ Links especiais
 <a href="mailto:friend@something.com?subject=Great%20news">Some text</a>
 ```
 
-# Tabelas
+## Tabelas
 
 ```html
 <table>
@@ -213,7 +213,7 @@ Links especiais
 <td> column data item
 ```
 
-# Entidades html
+## Entidades html
 
 Por vezes a utilização de caracteres reservados para poderem ser utilizados têm de ser substituidos por códigos ou nomes de entidades.
 
@@ -221,7 +221,7 @@ Por vezes a utilização de caracteres reservados para poderem ser utilizados t�
 
 Por exemplo o non-breaking space (&nbsp). Pode ser usado para apresentar uma velocidade mantendo sempre o valor e a unidade juntos (10 km/h), ou seja a linha nunca vai quebrar entre o 10 e o km/h
 
-# iframe
+## iframe
 
 Permite embeber um documento externo no documento atual. Usado por ex. para embeber videos do Youtube.
 
@@ -229,9 +229,9 @@ Permite embeber um documento externo no documento atual. Usado por ex. para embe
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A5AV5HAKjh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ```
 
-# Media em html5
+## Media em html5
 
-## Audio
+### Audio
 
 * Site musicas e sfx demo: Bensound
 * se remover altura da div no id `#imageHeading` ele ajusta altura à imagem
@@ -245,7 +245,7 @@ Permite embeber um documento externo no documento atual. Usado por ex. para embe
 </audio>
 ```
 
-## Vídeo
+### Vídeo
 
 * como fundo usar de forma a tipografia ser legível
 * sem som (ver autoplay)
@@ -274,7 +274,7 @@ Permite embeber um documento externo no documento atual. Usado por ex. para embe
 ```
 
 
-# Icones
+## Icones
 
 Existem algumas livrarias de ícones disponibilizadas que podemos utilizar e que têm por base elementos vetoriais disponibilizados através da importação de um ficheiro css externos.
 
@@ -291,7 +291,7 @@ Para utilizar um icone é necessário conhecer o nome dele através da [document
 
 Font awesome é uma outra livraria muito utilizada.
 
-# Botão vs. link
+## Botão vs. link
 
 Por vezes encontramos botões e links formatados em css de forma muito semelhante, no entanto a utilização de um ou de outro difere conforme o objetivo pretendido.
 
