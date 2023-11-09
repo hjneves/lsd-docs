@@ -313,7 +313,7 @@ Ambos permitem submeter informação de um form (type submit) mas a tag `<button
 
 No caso do botão com a tag `<input>` para além do tipo submit existem outros que podem ser criados conforme o tipo:
 
-Atributo `type`:
+Atributo `type`
 * `button` - The button is a clickable button
 * `submit` - The button is a submit button (submits form-data)
 * `reset` - The button is a reset button (resets the form-data to its initial values)
