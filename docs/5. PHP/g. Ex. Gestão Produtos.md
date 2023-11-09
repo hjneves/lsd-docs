@@ -125,7 +125,6 @@ from user;
 
 ## Organização do site - layout dos ficheiros
 
-
 ```mermaid
 graph TD
 
