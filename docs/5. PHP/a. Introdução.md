@@ -15,7 +15,10 @@ Para executarmos código php necessitamos de correr os programas no servidor. De
 
 As páginas do site podem então conter código **php** (backend) e código **html** e **css** (frontend). O nome das página que tiverem código php vão deixar de ter a extensão `.html` e passar a ter a extensão `.php`. Por convenção o ficheiro `index.php` é o ficheiro inicial do site.
 
->[!tip] Importante
+!!! note "Importante"
+	O código php nunca chega ao frontend, ele é pré-processado no backend e quando chega ao browser do utilizador já só vai com html, css e javascript. Ou seja, um ficheiro php é processado em dois tempos. Primeiro, no backend, criando a versão com apenas html, css e javascript e segundo, já no frontend, interpretado pelo browser.
+
+>**Importante**
 >O código php nunca chega ao frontend, ele é pré-processado no backend e quando chega ao browser do utilizador já só vai com html, css e javascript. Ou seja, um ficheiro php é processado em dois tempos. Primeiro, no backend, criando a versão com apenas html, css e javascript e segundo, já no frontend, interpretado pelo browser.
 
 Vamos ver um exemplo, este ficheiro chama-se `index.php`  
