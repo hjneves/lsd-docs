@@ -13,6 +13,7 @@ O site [caniuse](https://caniuse.com) é normalmente usado para validar compatib
 [Visual Studio Code](https://code.visualstudio.com)
 
 Existem algumas extensões no VS que podem ser úteis:
+
 **Live Server** - para um ambiente de live reloading
 **Prettier** - para formatação do código
 

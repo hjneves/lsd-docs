@@ -25,10 +25,10 @@ Notas para o módulo de web development do curso LSD Webdesign & Development.
 
 ### Zen Garden
 
-_Avaliação_: 10%
-_Objectivo_: Fazer um layout css para o site [Zen Garden](https://www.csszengarden.com/) apenas com recurso a regras css, sem alterar o html.
-_Entrega_: proposta gráfica, styles.css e assets gráficos (imagens, vídeos, fontes)
-_Duração_: 3 semanas (aprox.)
+- _Avaliação_: 10%.
+- _Objectivo_: Fazer um layout css para o site [Zen Garden](https://www.csszengarden.com/) apenas com recurso a regras css, sem alterar o html.
+- _Entrega_: proposta gráfica, styles.css e assets gráficos (imagens, vídeos, fontes)
+- _Duração_: 3 semanas (aprox.)
 ### Reformulação de site
 
 _Avaliação_: 20%
