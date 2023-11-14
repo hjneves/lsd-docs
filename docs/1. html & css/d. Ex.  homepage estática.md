@@ -1,6 +1,6 @@
 Criar um homepage estática com base em html e css.
 
-Usar coleção de estilos [water](https://watercss.kognise.dev/#installation)
+Podem usar por ex. a coleção de estilos [water](https://watercss.kognise.dev/#installation)
 
 ```css 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">

@@ -1,15 +1,14 @@
 
-Vamos usar o modelo com o ficheiro de dados que estão no projecto github lsd-db-store
-https://github.com/hjneves/lsd-db-store
+Vamos usar o modelo com o ficheiro de dados que está no projecto github [lsd-db-store](https://github.com/hjneves/lsd-db-store)
 
 ## Modelo ER
 ![[Pasted image 20230516224227.png]]
 
 ## Criação do modelos de dados e inserção de dados teste.
 
-- Aceder ao repositótio github
-https://github.com/hjneves/lsd-db-store
-
+Aceder ao repositótio [lsd-db-store](https://github.com/hjneves/lsd-db-store)
+Abrir o script no phpMyAdmin e executar.
+Após a execucção deverão ser criadas 4 tabelas e inseridos os respectivos dados dummy em cada uma delas.
 
 ## SQL e alguns exemplos de queries
 
