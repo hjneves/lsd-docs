@@ -387,8 +387,3 @@ São criadas através do termo `function` ou com a sintaxe `=>`designadas de arr
   console.log(personDescription);
 ```
 
-
-## Mini Jogo - Javascript
-
-[Slide-Puzzle](https://github.com/ImKennyYip/Slide-Puzzle)
-

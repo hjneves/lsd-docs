@@ -1,7 +1,7 @@
 
 ## O que é?
 
-A aplicação de estilo ao html é o que permite formatar cada elemento de forma a atingir o layout pretendido. Os estilos são definidos através de propriedades CSS
+A aplicação de estilos ao html é o que permite formatar cada elemento de forma a atingir o layout pretendido. Os estilos são definidos através de propriedades CSS
 
 CSS - Cascade Style sheet
 
@@ -694,7 +694,7 @@ Na verdade a propriedade `flex` é um atalho para a um subconjunto de outras pro
 flex: 0 1 auto /* shorcut fror setting flex-grow, flex-shrink. flex-basis*/
 ```
 
-Ver guia completo da [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+Ver guia completo da [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) e este guia [interativo](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/) do Josh Comeau.
 
 ### Position
 

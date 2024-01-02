@@ -458,3 +458,16 @@ Neste exemplo, temos ainda a validação do input, que caso esteja a vazio, é a
 
     </script>
 ```
+
+## Mini Jogo - Javascript
+
+Criar um slide puzzle com recurso a javascript.
+
+![[Pasted image 20231121154430.png|400]]
+
+Vamos partir do repositorio [lsd-js-game](https://github.com/Ardozia/lsd-js-puzzle). 
+Este jogo é um fork do jogo [Slide-Puzzle](https://github.com/ImKennyYip/Slide-Puzzle) de Kenny Yip
+
+
+
+
