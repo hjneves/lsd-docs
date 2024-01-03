@@ -1,28 +1,4 @@
 Vamos começar por ver como é a estrutura de uma página html e as principais tags.
-## Ferramentas
-
-### Editores de código online
-
-[Codepen](https://codepen.io) 
-[Codesand. ox](https://codesandbox.io) 
-
-Normalmente u. ado para realizar testes rápidos, enviar exemplos e tirar dúvidas. 
-O site [caniuse](https://caniuse.com) é normalmente usado para validar compatibilidade das tags HTML e propriedades CSS3 nos diversos browsers e versões. 
-### Editores de código
-[Visual Studio Code](https://code.visualstudio.com)
-
-Existem algumas extensões no VS que podem ser úteis:  
-**Live Server** - para um ambiente de live reloading. 
-**Prettier** - para formatação do código. 
-
-As extensões podem ser instaladas a partir do VS. 
-### Browser
-[Google Chrome](https://www.google.com/chrome/)
-
-## Estrutura de uma página
-
-Vamos olhara para a seguinte página html:  
-[www.example.com](www.example.com) 
 ### Header
 
 ```html
@@ -111,7 +87,7 @@ Usar `<br />` para quebrar linha sem parágrafo.
 ## Imagens
 
 ```html
-<img src="images/passaro.jpg" /> <!--self closed tag e um ficheiro local, tem por base a director do index.html -->
+<img src="images/passaro.jpg" /> <!--self closed tag e um ficheiro local, tem por base a directoria do ficheiro html que a contém -->
 <img src="images/passaro.jpg" width=200/> <!--tamanho proporcional com base na largura -->
 <img src="images/passaro.jpg" height=200/> <!--tamanho proporcional com base na altura-->
 <img src="images/passaro.jpg" width=200 height="500"/> <!--tamanho definido em altura e largura, pode distorcer-->
