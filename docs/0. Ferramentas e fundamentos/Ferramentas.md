@@ -1,6 +1,6 @@
 ### Editores de código online
 
-[Codepen](https://codepen.io) 
+[Codepen](https://codepen.io)  | 
 [Codesandbox](https://codesandbox.io) 
 
 Normalmente usado para realizar testes rápidos, enviar exemplos e tirar dúvidas. 
@@ -8,7 +8,8 @@ O site [caniuse](https://caniuse.com) é normalmente usado para validar compatib
 ### Editores de código
 [Visual Studio Code](https://code.visualstudio.com)
 
-Existem algumas extensões no VS que podem ser úteis:
+Existem algumas extensões no VS que podem ser úteis: 
+
 **Live Server** - para um ambiente de live reloading.
 **Prettier** - para formatação do código.
 
