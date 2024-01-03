@@ -1,4 +1,4 @@
-O [`git`](_https://git-scm.com/_) é uma ferramenta de controlo de versões no desenvolvimento de código. 
+O [`git`](https://git-scm.com/) é uma ferramenta de controlo de versões no desenvolvimento de código. 
 Num projeto de desenvolvimento de código a determinada altura vai ser muito importante controlar as alterações e adições que vão ser feitas ao longo do tempo. 
 
 Com o git podemos ver que alterações um ficheiro sofreu ao longo do tempo. Podemos testar determinada soluções e voltar atrás, a um ponto anterior no tempo, sem qualquer esforço. Ou eventualmente ocorreu um erro e queremos desfazer algum do trabalho feito.
