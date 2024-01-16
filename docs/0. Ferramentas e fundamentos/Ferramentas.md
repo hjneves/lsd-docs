@@ -14,6 +14,10 @@ Existem algumas extensões no VS que podem ser úteis:
 **Prettier** - para formatação do código.
 
 As extensões podem ser instaladas a partir do VS. 
+
+### Stack de desenvolvimento
+A stack de desenvolvimento que vamos usar é o [MAMP](https://www.mamp.info).
+Também pode ser usado o XAMP.
 ### Browser
 [Google Chrome](https://www.google.com/chrome/)
 

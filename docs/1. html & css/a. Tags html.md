@@ -195,17 +195,22 @@ Permite embeber um documento externo no documento atual. Usado por ex. para embe
 
 ### Audio
 
-* Site musicas e sfx demo: Bensound. 
-* se remover altura da div no id `#imageHeading` ele ajusta altura à imagem. 
-* Usar max-height no container para que a conteúdo diminua quando se torna muito pequena. 
+Tanto na tag de audio como na de video, é necessário indicar uma source, ou seja a localização para o ficheiro de media que vai ser apresentado ou reproduzido.
+
+* Site musicas e sfx demo: [Bensound](https://www.bensound.com/royalty-free-music). 
+
 
 ```html
-<audio controls loop muted preload>
+<audio controls loop muted preload autoplay>
   <source src="audio/4estacoes.ogg" type="audio/ogg">
   <source src="audio/4estacoes.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 ```
+
+Por questões de *user experience* alguns browsers não aceitam o autoplay no carregamento de uma página (ex. chrome)
+
+Ver mais sobre [web audio](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide)
 
 ### Vídeo
 
@@ -274,7 +279,7 @@ Ambos permitem submeter informação de um form (type submit) mas a tag `<button
 ```html
 <form>
 	...
-	<button class="btnBuy">COMPRAR</div>
+	<button class="btnBuy">COMPRAR</button>
 </form>
 ```
 
