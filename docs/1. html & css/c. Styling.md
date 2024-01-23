@@ -147,14 +147,26 @@ As pseudo-classes permitem formatar um elemento quando este se encontra num dete
 
 Por ex.
 ```css
+/* Formata link não visitado */
   a:link {
       text-decoration: none;
-      color: darkgray;
+      color: gray;
     }
 ```
 ```css
-  a:visited {
+/* Formata link visitado */
+a:visited {
       color: gray;
+    }
+
+/* Formata link quando sob o rato */
+a:hover {
+      color: darkgray;
+    }
+
+/* Formata link quando em button down */
+a:active {
+      color: lightgray;
     }
 ```
 Neste caso todos os links da página vão ser cinza escuro, sem sublinhado enquanto não forem visitados. Após visita passarão a cinza.
@@ -194,17 +206,10 @@ Um caso interessante poderá ser a utilização destes pseudo-elementos para for
 Por ex.
 ```css
 a::after {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/open-in-new.svg);
-    background-size: contain;
-    content:"";
-    display: inline-block;
-    vertical-align: middle;
-    width: 1em;
-    height: 1em;
+    content:"[*]";
 }
 ```
-![[Pasted image 20231023173701.png|200]]
-
+![[Pasted image 20240123170655.png|100]]
 O content é obrigatório que existe, ainda que vazio, as restantes propriedades são aplicadas como se de um elemento normal se tratasse.
 
 Ver mais https://web.dev/learn/css/pseudo-elements
@@ -266,7 +271,7 @@ Neste caso tanto o `article` como o parágrafo `p` vão assumir o `font-size` de
 3. elementos 
 4. seletor universal (\*)
 
-Quando há confilto de regras num elemento html, ganha a que tiver maior pontuação/especificidade. 
+Quando há conflito de regras num elemento html, ganha a que tiver maior pontuação/especificidade. 
 
 A keyword `!important`atribui a uma regra a maior especificidade, sendo esta a aplicada ao elemento
 
