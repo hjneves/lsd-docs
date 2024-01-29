@@ -402,6 +402,22 @@ Neste exemplo temos uma elemento que vai ocupar 864x260 (o padding e a border co
 
 >[!tip] Nota
 >Por vezes não queremos que o padding e a border alterem a dimensão especificada para os elementos. Neste caso existe uma propriedade `box-sizing: border-box;`que permite ao elemento incluir tanto o padding como a border no seu tamanho.
+
+### Object-fit
+
+Nos elementos imagem e video com esta propriedade é possíovel controlar a aparencia da imagem em relação à dimensão definida do container com `width`e `height`.  Por exemplo uma imagem retangular onde queremos apresentar num quadrado, vai ter de sofrer um clipping, caso contrário ficará distorcida. Neste caso seria necessário aplicar a propriedade `object-fit: cover`. Outra hipótese seria apresentá-la como fundo de um elemento `div`.
+
+Exemplo:
+```css
+section img {
+  width: 180px;
+  height: 180px;
+  border: 5px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+}
+```
+
 ### Borders
 
 As borders são o contorno do elemento e podem ser especificadas através da propriedade `border`.
