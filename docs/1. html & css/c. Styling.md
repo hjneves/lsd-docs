@@ -528,7 +528,7 @@ p {
 
 Esta propriedade permite controlar como um elemento, com uma dimensão fixa,  trata o seu conteúdo quando este ultrapassa os seus limites.
 
-Por exemplo se utilizarmos uma imagem dentro de uma div, mas quisermos garantir que o seu tamanho não ultrapassa as dimensões da div onde se encontra, podemos usar o valor `hidden`na propriedade overflow.
+Por exemplo se utilizarmos uma imagem ou texto dentro de uma div, mas quisermos garantir que o seu tamanho não ultrapassa as dimensões da div onde se encontra, podemos usar o valor `hidden`na propriedade overflow. 
 
 ```html
 .landingImage {
@@ -541,6 +541,71 @@ Por exemplo se utilizarmos uma imagem dentro de uma div, mas quisermos garantir 
 		<img src="images/back1.jpg">
 </div>
 ```
+
+### Imagens de fundo 
+
+Uma div para além de poder como fundo uma cor sólida ou um gradiente, também pode ter uma imagem. Neste caso todo o conteúdo da div vai aparecer sobre a imagem de fundo.
+
+É normalmente utilizada em headings, sliders e tem a vantagem de ser facilmente adaptável aos diversos tipos de ecrãs. A proporção da imagem pode ser controlada de forma a que a imagem não se distorça quando as dimensões da div se alteram de forma não proporcional.
+
+Por ex.
+```css
+.imageHeading {
+	height: 400px;
+	background-image: url("../images/img1.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+```
+Neste caso a imagem vai ter um tamanho de `cover`, o que significa que a imagem vai ser ajustada no tamanho para ocupar sempre toda a div e em termos de posição vai estar centrada tanto na horizontal (eixo x) como na vertical (eixo y). 
+
+### Gradientes
+
+Existem vários tipos de gradientes, lineares, radiais e cónicos. Um gradiente linear pode ser criados com a função `linear-gradient`atribuída à propriedade `background`. Os gradientes podem ser criados usando pelo menos duas cores e uma direção.
+
+Neste exemplo, temos um gradiente linear que vai transitar da cor `#3c0000`para a cor `#9948d9`partindo do canto inferior esquerdo para o canto superior direito.
+```css
+
+.intro {
+	background: #8C4742; /* fallboack color for browsers that do not support gradients */
+	  width: 100%;
+	  background: linear-gradient(to top right, #3c0000, #9948d9);
+	  padding: 7rem 2rem 4rem 2rem;
+}
+```
+
+Mais sobre [gradientes](https://web.dev/learn/css/gradients)
+
+### Sombras
+
+Através da propriedade `box-shadow`podemos criar uma sombra por debaixo do elemento div. Esta sombra pode ser manipulada em termos de offset, blur, spread e côr. Existe também a propriedade `text-shadow` utilizada para texto e a propriedade `drop-shadow` que pode ser aplicada a uma imagem com transparência.
+
+Neste exemplo temos um botão com uma sombra esbatida em toda a sua volta:
+```css
+ .audio button {
+   color: white;
+   width: 200px;
+   height: 40px;
+   font-size: 1.2rem;
+   border-radius: 20px;
+   border: none;
+   /* offset x e y a 0, blur de 24px e de côr preta   */
+   box-shadow: 0px 0px 24px black;
+}
+```
+```html
+<div class="audio">
+  <button>Enter</button>
+</div>
+```
+![[Pasted image 20231024103506.png|300]]
+
+As propriedade mais utilizadas são:
+**offset x e y** - defasamento de posição do fundo relativamente à posição do elemento. Relativo ao canto superior esquerdo
+**blur** - quantidade de esbatimento para a sombra
+**spread radius (opcional)** - quantidade de sombra que se espalha para além da borda do elemento.
+
+Mais sobre [sombras](https://web.dev/learn/css/shadows).
 
 ### Display
 
@@ -820,67 +885,3 @@ Não é suportado em  IE/Edge 15 ou anterior.
 CSS Tricks
 https://css-tricks.com/almanac/properties/p/position/
 
-### Imagens de fundo 
-
-Uma div para além de poder como fundo uma cor sólida ou um gradiente, também pode ter uma imagem. Neste caso todo o conteúdo da div vai aparecer sobre a imagem de fundo.
-
-É normalmente utilizada em headings, sliders e tem a vantagem de ser facilmente adaptável aos diversos tipos de ecrãs. A proporção da imagem pode ser controlada de forma a que a imagem não se distorça quando as dimensões da div se alteram de forma não proporcional.
-
-Por ex.
-```css
-.imageHeading {
-	height: 400px;
-	background-image: url("../images/img1.jpg");
-	background-size: cover;
-	background-position: center center;
-}
-```
-Neste caso a imagem vai ter um tamanho de `cover`, o que significa que a imagem vai ser ajustada no tamanho para ocupar sempre toda a div e em termos de posição vai estar centrada tanto na horizontal (eixo x) como na vertical (eixo y). 
-
-### Gradientes
-
-Existem vários tipos de gradientes, lineares, radiais e cónicos. Um gradiente linear pode ser criados com a função `linear-gradient`atribuída à propriedade `background`. Os gradientes podem ser criados usando pelo menos duas cores e uma direção.
-
-Neste exemplo, temos um gradiente linear que vai transitar da cor `#3c0000`para a cor `#9948d9`partindo do canto inferior esquerdo para o canto superior direito.
-```css
-
-.intro {
-	background: #8C4742; /* fallboack color for browsers that do not support gradients */
-	  width: 100%;
-	  background: linear-gradient(to top right, #3c0000, #9948d9);
-	  padding: 7rem 2rem 4rem 2rem;
-}
-```
-
-Mais sobre [gradientes](https://web.dev/learn/css/gradients)
-
-### Sombras
-
-Através da propriedade `box-shadow`podemos criar uma sombra por debaixo do elemento div. Esta sombra pode ser manipulada em termos de offset, blur, spread e côr. Existe também a propriedade `text-shadow` utilizada para texto e a propriedade `drop-shadow` que pode ser aplicada a uma imagem com transparência.
-
-Neste exemplo temos um botão com uma sombra esbatida em toda a sua volta:
-```css
- .audio button {
-   color: white;
-   width: 200px;
-   height: 40px;
-   font-size: 1.2rem;
-   border-radius: 20px;
-   border: none;
-   /* offset x e y a 0, blur de 24px e de côr preta   */
-   box-shadow: 0px 0px 24px black;
-}
-```
-```html
-<div class="audio">
-  <button>Enter</button>
-</div>
-```
-![[Pasted image 20231024103506.png|300]]
-
-As propriedade mais utilizadas são:
-**offset x e y** - defasamento de posição do fundo relativamente à posição do elemento. Relativo ao canto superior esquerdo
-**blur** - quantidade de esbatimento para a sombra
-**spread radius (opcional)** - quantidade de sombra que se espalha para além da borda do elemento.
-
-Mais sobre [sombras](https://web.dev/learn/css/shadows).
