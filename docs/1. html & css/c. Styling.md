@@ -728,13 +728,13 @@ Por defeito os elementos numa flexbox são colocados lado a lado e ocupam os esp
 
 No exemplo seguinte temos uma grid de 3 elementos colocados lado a lado, onde cada elemento tem o seu próprio tamanho.
 ```css
-.grid {
+.box {
 	display: flex;
 	flex-direction: row; /* valor por defeito */
 	gap: 5px; /* espaço a colocar entre os elementos da flexbox*/
 }
 
-.grid div {
+.box div {
 	background-color: chocolate;
 	height: 140px;
 	padding: 6px;
@@ -743,7 +743,7 @@ No exemplo seguinte temos uma grid de 3 elementos colocados lado a lado, onde ca
 ```
 
 ```html
-<div class="grid">
+<div class="box">
 	<div>Info</div>
 	<div>News from today</div>
 	<div>Feed</div>
@@ -752,7 +752,7 @@ No exemplo seguinte temos uma grid de 3 elementos colocados lado a lado, onde ca
 
 Por defeito os elementos ficam alinhados à esquerda. Podemos alterar a disposição dos elementos usando a propriedade `justify-content`.
 
-Por ex. se quisermos os elementos centrados, esta seria a classe grid :
+Por ex. se quisermos os elementos centrados, esta seria a classe `box` :
 ```css
 .grid {
 	display: flex;
@@ -777,7 +777,7 @@ Por exemplo, colocando `flex: 1` vai fazer com que os elementos se expandam de i
 
 Na verdade a propriedade `flex` é um atalho para a um subconjunto de outras propriedades.
 ```css
-flex: 0 1 auto /* shorcut fror setting flex-grow, flex-shrink. flex-basis*/
+flex: 0 1 auto /* shortcut for setting flex-grow, flex-shrink, flex-basis */
 ```
 
 Ver guia completo da [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) e este guia [interativo](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/) do Josh Comeau.

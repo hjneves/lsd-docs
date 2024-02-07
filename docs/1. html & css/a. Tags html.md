@@ -101,6 +101,8 @@ A tag de imagem `<img>` é uma self-closed tag e usa o atributo `src` para indic
 
 O atributo `alt` indica aos motores de pesquisa que imagem está a ser apresentada, tonando-se importante que esteja preenchida em todas as tags `<img>` relevando para SEO. 
 
+>**Online Image Generators**
+Existem serviços online que permitem aceder a imagem dummy com um tamanho que queremos, como por exemplo o [Lorem Picsum](https://picsum.photos) ou o [dummy Images](https://dummyimage.com/)
 
 ## Artigos
 

@@ -83,7 +83,7 @@ Por exemplo, se quisermos fazer um determinado elemento pulsar, indefinidamente
 }
 ```
 
-Foi definida na classe .pulser uma animation com a @keyframes pulse. Vai ser executada durante 1 segundo, de forma infinita e alternada.
+Foi definida na classe `.pulser` uma animation com a `@keyframes pulse`. Vai ser executada durante 1 segundo, de forma infinita e alternada.
 A estrutura da animação parte (0%) com uma opacidade a 0 e termina (100%) com uma transformação de escala do elemento.
 
 A forma como foi definida a animation tem por base uma forma abreviada de especifiacr diversos parâmetros que neste caso seriam:
