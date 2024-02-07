@@ -1,4 +1,3 @@
-# O que é Responsive Web Design?
 
 Responsive web design permite que uma página web apareça adequadamente em todos os equipamentos apenas com recurso a CSS e HTML sem necessidade ou recurso a javascript.
 
@@ -8,13 +7,13 @@ As páginas web não podem deixar de fora conteúdo para serem apresentadas em e
 Menus, imagens, layout de colunas são alguns do principals elementos a de uma página a adaptar.
 
 
-![](77BE1B6391A32BCFB981B558855B3D46.png) 
+![[77BE1B6391A32BCFB981B558855B3D46.png]] 
 Desktop 
 
-![](F4392B1D1AA8DFFE147A813890C5BC8F.png) 
+![[F4392B1D1AA8DFFE147A813890C5BC8F.png]]
 Tablet 
 
-![](6123D0A656B5738BC2043A370575AA2F.png) 
+![[6123D0A656B5738BC2043A370575AA2F.png]] 
 Telefone 
 
 Responsive web design vem da capacidade de usar CSS e HTML para redimensionar, esconder, encolher, alargar ou move o conteúdo de uma página para que esta tenha um visualização adequada em qualquer ecrã.
