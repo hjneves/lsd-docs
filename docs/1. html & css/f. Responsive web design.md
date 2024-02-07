@@ -122,9 +122,6 @@ Existem duas abordagens principais para aplicar as medias queries ao CSS. **Mobi
         <div>B</div>
         <div>C</div>
     </div>
-
-
-
 </body>
 </html>
 ```
