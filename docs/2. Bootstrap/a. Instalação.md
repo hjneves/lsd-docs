@@ -13,7 +13,4 @@ Vamos usar a versão 5
 [Bootstrap](https://getbootstrap.com)
 
 Bootstrap CDN
-```html
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-```
+A forma mais fácil e rápida de começar a usar o Bootstrap é instalando os links css e javascript. Ver [aqui](https://getbootstrap.com/docs/5.3/getting-started/download/#cdn-via-jsdelivr)

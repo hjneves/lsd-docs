@@ -3,7 +3,7 @@ Para uma alteração mais profunda o melhor será compilar uma versão do bootst
 
 ## Variáveis css
 
-
+Ver exemplo do clone da página de login do [[e. Mailchimp Login]].
 
 ## Sass
 
@@ -35,7 +35,7 @@ $navbar-dark-toggler-icon-bg: url("data:image...");
 3. Instalar e ativar o plugin do VS Code - Live Sass. Vai permitir efetuar a compilação do `mains.sass` num ficheiro `main.css`.
 4. Adicionar o ficheiro <code>main.css</code> ao projeto. Este ficheiro será a versão adaptada do Bootstrap.
 
-5. Para customizar :hover dos botões é necessário realizar override das variáveis usados pelo BS para o efeito. . Este código deverá estar no `mais.css`mas depois do import do bootstrap.
+5. Para customisar `:hover` dos botões é necessário realizar override das variáveis usados pelo BS para o efeito. . Este código deverá estar no `mais.css`mas depois do import do bootstrap.
 
 ```css
 // Custom SCSS and CSS (overrides bs)
