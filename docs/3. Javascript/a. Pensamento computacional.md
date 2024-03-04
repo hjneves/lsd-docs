@@ -3,7 +3,7 @@ Um algoritmo é uma sequência de passos que levam à execução de uma tarefa.
 
 No trabalho de programação de um projeto é muito importante decompor um problema a resolver em problemas mais pequenos e assim sucessivamente.Permite reduzir a complexidade e aumentar o nível de foco de abstração da solução, isto é, podemos encontrar soluções que podem depois ser aplicadas noutros contextos semelhantes (por ex. a mesma função que valida se um utilizador está logged in, poderá ser utilizada em várias páginas)
 
-Usar por exemplo o [codesandbox](https://codesandbox.io/) para testes.
+Usar por exemplo o [JSFiddle](https://jsfiddle.net) para testes.
 
 ## Tipos de dados e operações
 
@@ -94,17 +94,20 @@ Por exemplo, se pretendemos guardar determinado automóvel num objeto quais seri
 ![](1B07017004BB8D33B79F9A5BFD60F456.gif)
 
 **Propriedades:**
+```js
 car.name = Fiat
 car.model = 500
 car.weight = 850kg
 car.color = white
+```
 
 **Métodos:**
+```js
 car.start()
 car.drive()
 car.brake() 
 car.stop()
-
+```
 Todos os carros partilham as mesmas propriedades, mas elas terão naturalmente valores diferentes conforme o automóvel. Os métodos serão os mesmos em todos os carros mas serão executados em alturas diferentes.
 
 ### Objetos em javascript

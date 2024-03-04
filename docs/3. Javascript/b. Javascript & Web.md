@@ -350,7 +350,7 @@ Estamos a atribuir uma função ao evento `onsubmit` para efetuar a validação 
 
 ```
 
-Existem plugins que disponibilizam um conjunto de validações de forms, como por exemplo o  [PristineJS](https://pristine.js.org/demo.html)
+Existem plugins que disponibilizam um conjunto de validações de forms, como por exemplo o  [PristineJS](https://pristine.js.org/demo.html) ou o [Validate](https://rickharrison.github.io/validate.js/).
 
 ## Criação elementos
 
