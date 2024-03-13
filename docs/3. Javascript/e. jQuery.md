@@ -37,64 +37,92 @@ $(".post h3”) // elementos `h3` dento de elemento com class `post`
 ```
 
 ```html
-  <body>
-  
-    <h2>Blog Posts</h2>
-    <div class="postList">
-      <div class="post">
-        <h3>Lorem Ipsum</h3>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</p>
-        
-        <p>13 de Janeiro 2021</p>
-      </div>
-      <hr />
-      <div class="post">
-        <h3>Lorem Ipsum</h3>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</p>
-        
-        <p>13 de Janeiro 2021</p>
-      </div>
+      <div class="container">
+        <h2>Lista de trabalhos</h2>
+        <div class="workList d-flex flex-column gap-3">
+            <div class="work d-flex column-gap-3">
+                <img src="https://picsum.photos/id/23/200" />
+                <div class="">
+                    <p class="fs-5 fw-bold">Desenho de fonte</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="fs-6">Dezembro 2023</p>
+                    <p role="button" class="likes" data-liked="no">
+                        <i class="bi bi-heart-fill"></i>
+                        <span>6</span>
+                    </p>
+                </div>
+            </div>
+            <div class="work d-flex column-gap-3">
+                <img src="https://picsum.photos/id/111/200" />
+                <div class="">
+                    <p class="fs-5 fw-bold">Plugin Wordpress</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.dolor sit amet, consectetur adipiscing.
+                    </p>
+                    <p class="fs-6">Janeiro 2023</p>
+                    <p role="button" class="likes" data-liked="no">
+                        <i class="bi bi-heart-fill"></i>
+                        <span>10</span>
+                    </p>
+                </div>
 
-      <h3><a href="">Next theme is about Lorem</a></h3>
+            </div>
+            <div class="work d-flex column-gap-3">
+                <img src="https://picsum.photos/200" />
+                <div class="">
+                    <p class="fs-5 fw-bold">Concepção de logotipo</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <p class="fs-6">Dezembro 2023</p>
+                    <p role="button" class="likes" data-liked="no">
+                        <i class="bi bi-heart-fill"></i>
+                        <span>230</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
     </div>
+```
+```js
+  // JQuery selectors examples
+
+   // Change all works date
+	$('.work div p:nth-child(3)').text("Outubro de 2023")
+
+	//$('.work div p:nth-child(3)').css("color","darkred")
+
+	$('.work div p:nth-child(3)').toggleClass('text-secondary')
+
+	$('img').attr('src', 'https://picsum.photos/200')
+
+	//$('img').hide()
+
+	// eventos
+	$('img').on('click', function () {
+		const id = Math.floor(Math.random(1) * 200) + 1
+		$(this).attr('src', 'https://picsum.photos/id/' + id + '/200')
+		//$(this).attr('src','https://picsum.photos/id/200')
+	}) +
+
+	$('.likes').on('click', function () {
+		$(this).find('i').toggleClass('text-danger')
+
+		let nrLikes = $(this).find('span').text()
+		// aumenta se coracao vermelho
+		if ($(this).data('liked') == "no") {
+			nrLikes++
+			$(this).data('liked', "yes")
+		} else {
+			// diminui se coração cinza
+			nrLikes--
+			$(this).data('liked', "no")
+		}
+		alert($(this).data('liked'))
+		$(this).find('span').text(nrLikes)
+
+	})
 
 
-    <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="scripts/moment-with-locales.js"></script>
-    <script type="text/javascript">
-
-      // JQuery selectors examples
-
-      $(".post").css("color", "blue"); // equivalente ao document.getElementsByClass("post")[0]
-
-     // $("#nome_do_id") - selection of an id
-     $("h3").css("color", "gray");
-
-     $(".post h3").css("color", "red");
-
-
-     // Altera html (.text - aletra texto)
-     $("h2").html("Posts about Ipsum");
-
-
-     // Change an attribute
-     $("a").attr("href", "https://www.publico.pt");
-
-     // Esconder / mostrar elemento
-     $("a").hide();
-
-     // Add click to elements, with a callback function
-     $(".post h3").on('click',function(){
-        //$("a").toggle();
-        $("h3 a").fadeToggle(400, function() {
-          $(this).text("I've changed the link description");
-        });
-     })
-
-
-
-    </script>
-  </body>
 
 ```
 
@@ -212,3 +240,4 @@ Para animações que usem color e background color tem-se de adicionar o JQuery 
 
 ```
 
+Plugin [animate](https://animate.style)
