@@ -1,19 +1,18 @@
-## O que é?
+# O que é?
 
 A javascript library on top javascript to deliver more powerful functionalities with simplified expressions.
 
 some jquery plugins:
 
-colorbox.js - para mostrar como poderiam fazer uma light box
-hook.js - pull to refresh plugin
-tooltipster - more powerful tooltips
-unslider - to build slider effects
-magnetic popup - to build great photo pop up screens
-typeahead.js - tries to predict the words on searching inputs
+[ScrollMagic](https://scrollmagic.io) - efeitos com o scroll na página 
+hook.js - pull to refresh plugin 
+tooltipster - more powerful tooltips 
+[Magnific popup](https://dimsemenov.com/plugins/magnific-popup/) - to build great photo pop up screens 
+typeahead.js - tries to predict the words on searching inputs 
 
-## Instalação
+# Instalação
 
-### local ou remota
+## local ou remota
 
 - local garante a utilização de uma determinada versão 
 - remotamente podermos usar jquery-latest.js para ligar sempre a versão mais recente
@@ -26,14 +25,16 @@ LOCAL:
 REMOTA: 
 `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"\>\</script\>`
 
-## Selecionar um elemento
+# Selecionar um elemento
 
 - Pegar no exemplo do Blog, apagar input e criar 2 posts
 
-`$("elemento") -> $("div”)`
-`$("#elemento_id)`
-`$(".class_id)`
-`$(".post h3”) `-\> elementos `h3` dento de elemento com class `post`
+```js
+$("elemento") -> $("div”)`
+$("#elemento_id)
+$(".class_id)
+$(".post h3”) // elementos `h3` dento de elemento com class `post`
+```
 
 ```html
   <body>
@@ -83,7 +84,7 @@ REMOTA:
      $("a").hide();
 
      // Add click to elements, with a callback function
-     $(".post h3").click(function(){
+     $(".post h3").on('click',function(){
         //$("a").toggle();
         $("h3 a").fadeToggle(400, function() {
           $(this).text("I've changed the link description");
@@ -100,11 +101,9 @@ REMOTA:
 ## Eventos (ex. click) 
 
 ```js
-
-   $(".post h3").click(function(){
+   $(".post h3").on("click", function(){
       alert("Post clicked!")
     });
-
 ```
 
 ## Alterar/Obter propriedade de vários elementos clicados
@@ -112,8 +111,8 @@ REMOTA:
 Por exemplo mostra o HTML da DIV clickada
 
 ```js
-$("div").click(function(){
-      alert($(this).html());
+$("div").on('click', function(){
+      alert($(this).html()
     });
 ```
 
@@ -145,6 +144,17 @@ ex. o href dos links
 	$("elemento").css("propriedade") -\> ontem valor corrente
 
 	$(".post").css("color", "blue")
+```
+
+## Adicionar e remover classes
+
+
+```js
+	$("elemento").addClass("postItem")
+	$("elemento").removeClass("postItem")
+	// toggle remove ou adiciona conforme esteja na lista
+	$("elemento").toggleClass("postItem")
+
 ```
 
 ## Esconder/Mostrar um elemento 

@@ -470,4 +470,6 @@ Este jogo é um fork do jogo [Slide-Puzzle](https://github.com/ImKennyYip/Slide-
 
 
 
+## Plugin de slider
 
+O bootstrap tem incluído um carrousel, mas existem diversos plugins para a implementação de sliders que permitem mais flexibilidade. Um exemplo é o [swipper](https://swiperjs.com).
