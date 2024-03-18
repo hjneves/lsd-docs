@@ -1,14 +1,14 @@
 # O que é?
 
-A javascript library on top javascript to deliver more powerful functionalities with simplified expressions.
+A javascript library on top of javascript to deliver more powerful functionalities with simplified expressions.
 
 some jquery plugins:
 
-[ScrollMagic](https://scrollmagic.io) - efeitos com o scroll na página 
-hook.js - pull to refresh plugin 
-tooltipster - more powerful tooltips 
-[Magnific popup](https://dimsemenov.com/plugins/magnific-popup/) - to build great photo pop up screens 
-typeahead.js - tries to predict the words on searching inputs 
+- [ScrollMagic](https://scrollmagic.io) - efeitos com o scroll na página 
+- hook.js - pull to refresh plugin 
+- tooltipster - more powerful tooltips 
+- [Magnific popup](https://dimsemenov.com/plugins/magnific-popup/) - to build great photo pop up screens 
+- typeahead.js - tries to predict the words on searching inputs 
 
 # Instalação
 
@@ -26,8 +26,6 @@ REMOTA:
 `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"\>\</script\>`
 
 # Selecionar um elemento
-
-- Pegar no exemplo do Blog, apagar input e criar 2 posts
 
 ```js
 $("elemento") -> $("div”)`
