@@ -83,3 +83,16 @@ git merge crazy-experiment
 ```
 
 ![[Pasted image 20231108152611.png|500]]
+
+## Publicação
+
+Quando queremos partilhar o código com outras pessoas o cenário mais indicado é publicar o repositorio num espaço online. Um dos serviços mais conhecidos para criação de repositórios online é o github.
+
+Usando por exemplo o GitHub Desktop podemos publicar um repositório local no gitbub. É importante notar que após a publicação passamos a ter uma versão local e uma versão remota dos código.
+Assim quando se vão fazendo novos commits eles apenas residem na versão local. Para atualizar a versão remota do repositório é necessário efetuar a operação de push, que vai atualizar a versão remota a partir da local. Já 
+
+**Push** - atualizar na repositório remoto todos os commits realizados na versão local do repositório
+
+Se alguém também com acesso ao repositório remoto realizar alterações e efetuar push ou outros elementos vão passar a ver alterações /commits no repositório remoto que podem "descarregar" para a sua versão local, neste caso atrabés de uma operação de pull
+
+Pull - "descarrega" um conjunto de commits presentes no repositório remoto para a versão local.

@@ -104,6 +104,57 @@ $strongPwd = $salt.$userPwd;
 $pwd = hash('sha256', $strongPwd);
 ```
 
+O php tem funções para criação de versões hashed das palavras chave e a sua validação no login:
+```php
+<?php
+// Signup
+// Assume user-provided password from a registration form
+$password = 'user_password123';
+
+// Hash the password
+$hash = password_hash($password, PASSWORD_DEFAULT);
+
+// Store $hash in the database
+// Example database insert query (assuming $db is your database connection):
+$sql = "INSERT INTO users (username, password_hash) VALUES (:username, :password_hash)";
+$stmt = $db->prepare($sql);
+$stmt->bindParam(':username', $username);
+$stmt->bindParam(':password_hash', $hash);
+$stmt->execute();
+?>
+
+// Login
+<?php
+// Assume user-provided username and password from a login form
+$username = 'user_provided_username';
+$password = 'user_password123';
+
+// Retrieve the stored hash from the database based on the username
+$sql = "SELECT password_hash FROM users WHERE username = :username";
+$stmt = $db->prepare($sql);
+$stmt->bindParam(':username', $username);
+$stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+// Check if a user with the given username was found
+if ($row) {
+    $stored_hash = $row['password_hash'];
+
+    // Verify the password against the stored hash
+    if (password_verify($password, $stored_hash)) {
+        echo "Login successful!";
+        // Proceed with authenticated session
+    } else {
+        echo "Invalid password.";
+    }
+} else {
+    echo "No user found with that username.";
+}
+?>
+
+
+```
+
 
 ## Desafio: Efetuar a página de login
 

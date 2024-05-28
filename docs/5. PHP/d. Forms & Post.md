@@ -87,9 +87,9 @@ O nosso form de signup também tem um campo de input do tipo `file` que nos perm
 Para que o submit do form possa considerar este campo é necessário:
 - garantir que o php está configurado para permit o upload de ficheiros. No ficheiro `php.ini` verificar que a seguinte propriedade está ativa: `file_uploads = On`
 * garantir o método post no form: `method="post"`
-* garantir o seguinte atributo no form: `enctype="multipart/form-data"`. Ele especifica que `content-type`vai ser usado na submissão do form. g the form
+* garantir o seguinte atributo no form: `enctype="multipart/form-data"`. Ele especifica que `content-type`vai ser usado na submissão do form.
 
-No backend, a informação dos ficheiros carregados fica disponível em PHP através do array associativo `$_FILES`_
+No backend, a informação dos ficheiros carregados fica disponível em PHP através do array associativo `$_FILES`.
 
 Descrição do array `$_FILES`:
 ```php 
