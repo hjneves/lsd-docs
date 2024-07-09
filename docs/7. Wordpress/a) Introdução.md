@@ -27,6 +27,9 @@ A partir daqui podemos iniciar a instalação do wordpress acedendo ao endereço
 
 Avançar, preencher o form com os dados do site e utilizador, para finalizar a instalação.
 
+## Dashboard
+
+Para aceder ao dashboard da instalação do Wordpress usamos o endereço  `http://meu-dominio.com/wp.admin/` e entra com o user de administração.
 ## Estrutura
 
 A estrutura do wordpress é baseada em páginas templates que definem o layout do site:
