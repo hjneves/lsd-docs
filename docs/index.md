@@ -44,10 +44,10 @@ Notas para o módulo de web development do curso LSD Webdesign & Development.
 
 ## Avaliação
 
-Assiduidade e Pontualidade 10%. 
-Empenho, Motivação e Participação 20%. 
-Conhecimentos, Capacidades e Competências Adquiridas 30%. 
-Criatividade, Singularidade e Inovação 40 %. 
+- Assiduidade e Pontualidade 10%. 
+- Empenho, Motivação e Participação 20%. 
+- Conhecimentos, Capacidades e Competências Adquiridas 30%. 
+- Criatividade, Singularidade e Inovação 40 %. 
 
 ## Contactos
 Humberto Neves. 
