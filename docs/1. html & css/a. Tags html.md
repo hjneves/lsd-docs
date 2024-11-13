@@ -1,5 +1,5 @@
 Vamos começar por ver como é a estrutura de uma página html e as principais tags.
-### Header
+### Head
 
 ```html
 <!DOCTYPE html>
@@ -41,6 +41,24 @@ Por exemplo, um parágrafo inserido numa `div`
 Na imagem seguinte uma estrutura genérica de uma pagina web, usando tags html5. Estas tags são `div's` com uma determinada semântica associada que é reconhecida em termos de SEO.
 
 ![[Pasted image 20221115190049.png]]
+
+Em termos de html poderia ser algo como:
+```html
+<div>
+	<header>
+		<nav>
+		</nav>
+	</header>
+	<main>
+		<article></article>
+		<article></article>
+		<article></article>
+	</main>
+	<footer>
+	</footer>
+</div>
+```
+
 ## Header Tags
 
 As tags de heading reconhecidas são 
@@ -61,9 +79,20 @@ Usar `<br />` para quebrar linha sem parágrafo.
 
 `<strong>` texto a bold. 
 `<em> `texto em itálico , `em` vem de emphasis. 
-`<u>` texto sublinhado. 
-`<strike>` texto rasurado. 
+`<ins>` texto sublinhado. 
+`<del>` texto rasurado por ter sido eliminado.
+`<s>` text rasurado por não estar correto.
 
+Exemplo básico de utilização:
+```html
+<div>
+	<p>Texto com paragrafo</p>
+	<p>Segundo <span>parágrafo</span> de texto</p>
+	<p>Uma palavra a <strong>bold</strong></p>
+	<p>Uma palavra <strike>rasurada</strike></p>
+	<p>Uma palavra a <em>itálico</em></p>
+</div>
+```
 ## Lista não ordenada
 
 ```html

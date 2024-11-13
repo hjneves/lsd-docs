@@ -206,11 +206,18 @@ Um caso interessante poderá ser a utilização destes pseudo-elementos para for
 Por ex.
 ```css
 a::after {
-    content:"[*]";
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/open-in-new.svg);
+    background-size: contain;
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
 }
 ```
-![[Pasted image 20240123170655.png|100]]
-O content é obrigatório que existe, ainda que vazio, as restantes propriedades são aplicadas como se de um elemento normal se tratasse.
+![[Pasted image 20231023173701.png|200]]
+
+O content é obrigatório que exista, ainda que vazio, as restantes propriedades são aplicadas como se de um elemento normal se tratasse.
 
 Ver mais https://web.dev/learn/css/pseudo-elements
 
