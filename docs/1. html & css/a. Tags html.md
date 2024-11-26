@@ -10,6 +10,7 @@ Vamos começar por ver como é a estrutura de uma página html e as principais t
   <!-- meta tags incluem informação sobre propriedades do documento -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A blurb to describe the content of the page appears here" >
+  <meta charset="utf-8" />
   <style> 
     /* comentário css: alguns estilos com css */
   </style>

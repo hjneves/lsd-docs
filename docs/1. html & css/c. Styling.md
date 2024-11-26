@@ -201,23 +201,23 @@ a::after {
 ```
 ![[Pasted image 20231023173136.png|200]]
 
-Um caso interessante poderá ser a utilização destes pseudo-elementos para formatar um link indicando que é um link externo
+Um caso interessante poderá ser a utilização destes pseudo-elementos para formatar um link indicando que é um link externo. 
+Neste caso, podemos usar uma livraria de icons, como o [Bootstrap Icons](https://icons.getbootstrap.com/) para apresentar um ícone ao lado direito do link. 
 
 Por ex.
 ```css
-a::after {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/open-in-new.svg);
-    background-size: contain;
-    content:"";
-    display: inline-block;
-    vertical-align: middle;
-    width: 1em;
-    height: 1em;
+// Import da livraria
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+a.external::after {
+  content: "\F1C5";
+  font-family: "bootstrap-icons";
+  margin: 2px;
 }
 ```
 ![[Pasted image 20231023173701.png|200]]
 
-O content é obrigatório que exista, ainda que vazio, as restantes propriedades são aplicadas como se de um elemento normal se tratasse.
+No content está o código CSS do icon, as restantes propriedades são aplicadas como se de um elemento normal se tratasse.
 
 Ver mais https://web.dev/learn/css/pseudo-elements
 
@@ -348,12 +348,12 @@ No ex. seguinte estamos criar duas fontes. Uma com o nome RobotoLight e a outra 
 
  O tamanho da fonte pode ser definido de diversas formas:
 
-- px - pixéis, valor fixo
-- pt - pontos, valor fixo
-- % - percentagem relativamente ao elemento pai ( default no browser para o body)
-- em - "em's" tamanho escalável mais adequado para mobile, `1 em` corresponde ao font-size definido no elemento container
-- rem - semelhante ao "em", mas o tamanho é sempre relativo ao tamanho base (root, normalmente 16px) 
-
+| px  | pixéis, valor fixo                                                                                                 |
+| --- | ------------------------------------------------------------------------------------------------------------------ |
+| pt  | pontos, valor fixo                                                                                                 |
+| %   | percentagem relativamente ao elemento pai ( default no browser para o body)                                        |
+| em  | "em's" tamanho escalável mais adequado para mobile, `1 em` corresponde ao font-size definido no elemento container |
+| rem | semelhante ao "em", mas o tamanho é sempre relativo ao tamanho base (root, normalmente 16px)                       |
 Relação de dimensão entre os diversos formatos
 1em ~ 100% ~ 12pt ~16px
 
@@ -365,8 +365,7 @@ Alguns exemplos:
 Artigo sobre a utilização destes formatos
 <http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/>
 
-Uma boa prática será usar uma base percentual no `<body>` e depois **em** ou **%** nos elementos
-
+Uma boa prática será usar uma base percentual no `<body>` e depois **em** ou **%** nos elementos.
 
 
 ### Cores
@@ -397,15 +396,16 @@ Tipicamente é uma solução utilizada para criar fundos com transparência em `
 
 Este modelo que podemos encontrar nas *developer tools* dos browsers ilustram como os elementos html de uma página são estruturados, ao nível da sua dimensão e espaçamento.
 Cada elemento tem:
-- dimensão intrínseca (azul) - dimensão especificada pelo `width`e `height`no css
-- padding (verde) - espaçamento entre o limite do elemento e o seu conteúdo
-- border (amarelo) - dimensão da borda do elemento
-- margin (laranja) - espaçamento entre o limite do elemento face ao elementos irmão ou pai
 
-![[Pasted image 20231020180652.png|400]]
-
+| dimensão intrínseca (azul) | dimensão especificada pelo `width`e `height`no css                    |
+| -------------------------- | --------------------------------------------------------------------- |
+| padding (verde)            | espaçamento entre o limite do elemento e o seu conteúdo               |
+| border (amarelo)           | dimensão da borda do elemento                                         |
+| margin (laranja)           | espaçamento entre o limite do elemento face ao elementos irmão ou pai |
 A dimensão real do elemento no UI engloba a sua dimensão intrínseca (794x160) o padding e a border.
 Neste exemplo temos uma elemento que vai ocupar 864x260 (o padding e a border contam duas vezes em largura e altura)
+
+![[Pasted image 20231020180652.png|400]]
 
 >[!tip] Nota
 >Por vezes não queremos que o padding e a border alterem a dimensão especificada para os elementos. Neste caso existe uma propriedade `box-sizing: border-box;`que permite ao elemento incluir tanto o padding como a border no seu tamanho.
