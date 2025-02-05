@@ -1,7 +1,39 @@
-Utilizar uma linguagem de programação implica pensar de forma algoritmica, lógica e completa. A lógica é a forma de encadear raciocínio para atingir um determinado objetivo.
+**Pensamento computacional** é um método de resolução de problemas que envolve uma estratégia de decomposição em problemas mais pequenos que sejam de fácil gestão.
+É um método que tem por base os seguintes conceitos:
+
+1. Decomposição 
+2. Reconhecimento de padrões
+3. Abstração
+4. Algorítmos
+
+## Decomposição
+
+No trabalho de programação de um projeto é muito importante decompor um problema a resolver em problemas mais pequenos e assim sucessivamente. Permite reduzir a complexidade e aumentar o nível de foco nas soluções
+
+Por exemplo, queremos que um botão quando clicado, altere o conteúdo de um parágrafo num determinada página html. Poderíamos decompor este problema nos seguintes sub problemas:
+- selecionar o elemento `button`
+- adicionar um evento ao botão
+- seleccionar o parágrafo `<p>`a alterar
+- alterar  o conteúdo do parágrafo
+
+## Reconhecimento de padrões
+
+O reconhecimento de padrões permite a criação de uma função que pode ser usada depois em diversos contextos, em vez de estar sempre a repetir o mesmo código.
+
+Por exemplo, queremos identificar se um determinado user está logged in num site.
+Em vez de estar sempre a repetir o código para este tarefa em cada página, pode ser criada uma função (por ex.  `checkUserLoggedIn()`) que pode ser utilizada em todas as páginas.
+
+## Abstração
+
+Quando criamos uma função, como por exemplo a referida anteriormente `checkUserLoggedIn()` na verdade estamos a abstrair um conjunto lógico de passos que permitem saber se um user está logged in ou não num nome de uma função que podemos invocar
+A vantagem deste processo é permitir a utilização de conceitos e funções sem necessidade de entrar nas suas complexidades internas. 
+Outro exemplo serão os diversos plugins que podemos utilizar paras as mais variadas necessidades, como por exemplo um plugin para validar form html.
+
+## Algoritmo
+
+Utilizar uma linguagem de programação implica pensar de forma algorítmica, lógica e completa. A lógica é a forma de encadear raciocínio para atingir um determinado objetivo.
 Um algoritmo é uma sequência de passos que levam à execução de uma tarefa.
 
-No trabalho de programação de um projeto é muito importante decompor um problema a resolver em problemas mais pequenos e assim sucessivamente.Permite reduzir a complexidade e aumentar o nível de foco de abstração da solução, isto é, podemos encontrar soluções que podem depois ser aplicadas noutros contextos semelhantes (por ex. a mesma função que valida se um utilizador está logged in, poderá ser utilizada em várias páginas)
 
 Usar por exemplo o [JSFiddle](https://jsfiddle.net) para testes.
 
