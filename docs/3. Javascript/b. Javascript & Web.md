@@ -1,7 +1,7 @@
 ## Introdução
 
 A linguagem de programação javascript está intimamente ligada ao desenvolvimento web, sendo a linguagem que os browsers suportam no desenvolvimento do frontend ao nível das interações e dinamismo.
-É através de javascript que conseguimos por ex. desencadear ou implementar animações numa página, validar campos num formulário, alterar a estrutura ou conteúdo da página, etc.
+Sendo os programas executados no browser, é através de javascript que conseguimos por ex. desencadear ou implementar animações numa página, validar campos num formulário, alterar a estrutura ou conteúdo da página, etc.
 
 A componente javascript de uma página web pode ser definidas de várias formas:
 
@@ -34,7 +34,7 @@ Neste exemplo vamos carregar o código javascript que estiver no ficheiro `scrip
 ## DOM
 
 O javascript para conseguir interagir com uma página web vai ter acesso ao denominado DOM - Document Object Model.
-Este modelo é uma representação de todos os elementos presentes numa página numa estrutura em forma de árvore. Inicia com o nó `document`e depois vai ramificando conforme vamos tendo elemento dentro de elementos.
+Este modelo é uma representação de todos os elementos presentes numa página numa estrutura em forma de árvore. Inicia com o nó `document`e depois vai ramificando conforme vamos tendo elementos dentro de elementos. 
 
 Exemplificando:
 ```html
@@ -75,6 +75,11 @@ flowchart TD
     div --- button
     body --- script
 ```
+
+Através do javascript vamos conseguir:
+- alterar o conteúdo de elementos html
+- modificar o css de elementos html
+- adicionar ou remover elementos html
 
 ## Elementos e Eventos
 
@@ -158,14 +163,18 @@ Podemos usar uma função anónima ou uma função normal para associar ao event
 Neste exemplo, vamos usar o evento `onclick`num botão para executar uma função que vai simular o feedback ao utilizador num situação de envio de ficheiro.
 ```html
 <button class="submit">Enviar</button>
-<p class="text">Work 1.pdf</p>
+<p class="works">Work 1.pdf</p>
+<p class="works">Work 2.pdf</p>
 
 <script type="text/javascript">  
 document.querySelector(".submit").onclick = function () {
-  document.querySelector(".text").innerHTML = "Work 1.pdf (enviado)";
-  // Neste caso até era melhor usar appending
-  // Versão curta do appending
-  document.querySelector(".text").innerHTML += " (enviado)";
+  // get the <p> elements with class works
+  let works = document.getElementsByClassName("works")
+
+  // Percorrer o array works
+  for (work of works) {
+	work.textContent += " (done)"
+  }
 }
 </script>
 ```
@@ -179,17 +188,20 @@ Versão do código anterior mas com recurso a css para formatar a mensagem de en
 </style>
 
 ...
-
 <button class="submit">Enviar</button>
-<p class="text">Work 1.pdf</p>
-
-
+<p class="works">Work 1.pdf</p>
+<p class="works">Work 2.pdf</p>
 
 <script type="text/javascript">  
 document.querySelector(".submit").onclick = function () {
+  // get the <p> elements with class works
+  let works = document.getElementsByClassName("works")
 
-  document.querySelector(".text").innerHTML += " <span>(enviado)<span>";
-
+  // Percorrer o array works
+  for (work of works) {
+	work.textContent += " (done)"
+	work.style.color = "green"
+  }
 }
 </script>
 ```
@@ -198,7 +210,7 @@ document.querySelector(".submit").onclick = function () {
 
 Com javascript também podemos manipular os estilos css aplicados aos elementos. Temos o objecto `style` em todos os elementos a partir do qual chegamos às propriedades css. 
 
-Neste exemplo vamos ter dois botões para fazer o increase e o decrease do tamanho da fonte de uma página:
+Neste exemplo vamos ter dois botões para fazer o increase e o decrease do tamanho da fonte de uma página html,  alterando a tamanho da fonte do elemento html `documentElement`, que é a base usada para o tamanho dos parágrafos e dos headings 
 ```html
 
 <button class="inc">Increase</button>
@@ -206,16 +218,16 @@ Neste exemplo vamos ter dois botões para fazer o increase e o decrease do taman
 <p>My Portfolio Works</p>
 
 <script type="text/javascript">
-  let size = 1;
+  let size = 12;
 
   document.querySelector(".inc").onclick = function () {
-	size = size + 0.2;
-	document.body.style.fontSize = size + "em";
+	size = size + 2;
+	document.documentElement.style.fontSize = size + "px";
   };
 
   document.querySelector(".dec").onclick = function () {
-	size = size - 0.2;
-	document.body.style.fontSize = size + "em";
+	size = size - 2;
+	document.documentElement.style.fontSize = size + "px";
   };
 </script>
 
@@ -226,7 +238,22 @@ Neste exemplo vamos ter dois botões para fazer o increase e o decrease do taman
 
 #### Criar 2 temas 
 
-Neste exercício queremos simular a criação de 2 temas para uma página: noite e dia. A mudança de tema é desencadeada através de dois botões e os temas vaão modificar apelas a cor de fundo e a cor do texto da página.
+Neste exercício queremos simular a criação de 2 temas para uma página: noite e dia. A mudança de tema é desencadeada através de dois botões e os temas vão modificar apelas a cor de fundo e a cor do texto da página.
+
+```css
+    .day {
+      color: black;
+      background-color: white;
+      transition: all 0.5s;
+    }
+
+    .night {
+      color: white;
+      background-color: black;
+      transition: all 0.5s;
+    }
+```
+
 ```html
 <button class="night">Noite</button>
 <button class="day">Dia</button>
