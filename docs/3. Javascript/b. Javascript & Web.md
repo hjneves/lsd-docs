@@ -154,6 +154,11 @@ Podemos usar uma função anónima ou uma função normal para associar ao event
     function validateCart() {
       alert("Hi You don't have any products");
     }
+
+    // arrow function
+    const validateCart2 = () => {
+      alert("Hi You don't have any products");
+    }
     
 </script>
 ```
@@ -485,18 +490,3 @@ Neste exemplo, temos ainda a validação do input, que caso esteja a vazio, é a
 
     </script>
 ```
-
-## Mini Jogo - Javascript
-
-Criar um slide puzzle com recurso a javascript.
-
-![[Pasted image 20231121154430.png|400]]
-
-Vamos partir do repositorio [lsd-js-game](https://github.com/Ardozia/lsd-js-puzzle). 
-Este jogo é um fork do jogo [Slide-Puzzle](https://github.com/ImKennyYip/Slide-Puzzle) de Kenny Yip
-
-
-
-## Plugin de slider
-
-O bootstrap tem incluído um carrousel, mas existem diversos plugins para a implementação de sliders que permitem mais flexibilidade. Um exemplo é o [swipper](https://swiperjs.com).

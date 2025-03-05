@@ -1,4 +1,4 @@
-# O que é?
+## O que é?
 
 A javascript library on top of javascript to deliver more powerful functionalities with simplified expressions.
 
@@ -10,9 +10,9 @@ some jquery plugins:
 - [Magnific popup](https://dimsemenov.com/plugins/magnific-popup/) - to build great photo pop up screens 
 - typeahead.js - tries to predict the words on searching inputs 
 
-# Instalação
+## Instalação
 
-## local ou remota
+### local ou remota
 
 - local garante a utilização de uma determinada versão 
 - remotamente podermos usar jquery-latest.js para ligar sempre a versão mais recente
@@ -25,7 +25,7 @@ LOCAL:
 REMOTA: 
 `<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"\>\</script\>`
 
-# Selecionar um elemento
+## Selecionar um elemento
 
 ```js
 $("elemento") -> $("div”)`
