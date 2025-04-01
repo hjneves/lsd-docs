@@ -32,7 +32,8 @@ Vamos ver um exemplo, este ficheiro chama-se `index.php`
 Todo o código php tem de estar dentro de uma tag `<?php  ......     ?>`.
 Apenas o que está dentro desta tag é interpretado como código php, todo o resto vai ser interpretado como html. Como podemos ver, no mesmo ficheiro, podemos ter código php e código html misturado.
 Para abrimos este ficheiro no browser vamos colocar o seu endereço, por ex. `http://localhost/index.php`ou simplesmente `http://localhost/`.
-O vai acontecer é o seguinte:
+
+O que vai acontecer é o seguinte:
 - o webserver vai receber o pedido para este ficheiro 
 - vai interpretar o seu código, e como tem um bloco php vai pré processá-lo.
 - Neste caso o php está a escrever hum h1 no ficheiro.
@@ -73,7 +74,7 @@ Alguns exemplos de variáveis:
 
 ```
 
-Os arrays, é uma estrutura muito usada para guardar valores quando efetuamos consultas à base de dados. 
+Os arrays, são uma estrutura muito usada para guardar valores quando efetuamos consultas à base de dados. 
 No exemplo anterior temos array indexados e associativos. A diferença está na `key` (chave) de acesso ao elemento. No caso dos arrays indexados a `key` é numérica, mas no caso dos associativos, a `key`pode ser uma string.
 Para obter a cor `verde` do array `favouriteColors`devo aceder a `$favouriteColors[0]`.
 Já para obter a marca(Ford) que se encontra no array `carro` devo aceder a `$carro["brand"]

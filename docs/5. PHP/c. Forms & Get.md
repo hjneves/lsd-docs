@@ -35,7 +35,7 @@ A informação é codificado em pares variável=valor:
 ```
 
 
-## Como uma página HTLM codifica os parâmetros
+## Como uma página HTML codifica os parâmetros
 
 Até agora colocámos manualmente os parâmetros na barra de endereços, mas o normal são os utilizadores introduzirem as informação nos campos de input das páginas.
 Os forms são o ponto de interligação com o utilizador no que respeita a introdução de informação. É através das propriedades do forms e dos campos de input que se processa a codificação do URL para ser enviado ao backend.
@@ -43,7 +43,7 @@ Os forms são o ponto de interligação com o utilizador no que respeita a intro
 >[!tip] Codificação do form
 >Os campos do form são codificados em pares `variável=valor` separados por `&`, no url. A `variável` corresponde ao atributo `name` do campo de input, e o seu valor terá o `value` do campo de input.
 
-Existem dois atributos do forma que estão muito ligados com este processo, o `method` que indica qual o método http a usar, e o `action`que indica qual é a página que vai processar a submissão do form.
+Existem dois atributos do form que estão muito ligados com este processo, o `method` que indica qual o método http a usar, e o `action`que indica qual é a página que vai processar a submissão do form.
 
 Neste exemplo o form não tem especificado os atributos `method` e `action`. Logo assume por defeito o método `GET` e a `action`é a pagina que contém o form.
 ```html
