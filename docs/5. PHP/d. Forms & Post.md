@@ -38,15 +38,17 @@ Para processar este form de signup no backend vamos ter outro array associativo 
 Neste caso, para ler a informação do form em backend :
 ```php
 if (isset($_POST['signup'])){
-	$name = $_POST["name"];
-	$email = $_POST["email"];
-	$password = $_POST["password"];
+	$name = mysqli_real_escape_string($_POST["name"]);
+	$email = mysqli_real_escape_string($_POST["email"]);
+	$password = mysqli_real_escape_string($_POST["password"]);
 }
 ```
 
 >[!tipo] Porque se valida com o isset?
 > Porque estamos a ler a informação apenas se tiver sido efectuado um submit (através do `isset`) ? Como o código de backend se escontra na mesma página que o código de frontend existem aqui dois momentos. O primeiro em que a página é pedida para ser preenchida pelo utilizador. Nesta fase não existe nenhum submit e portanto não faz sentido ler valores do `$_POST`. O segundo momento acontece quando o utilizador faz submit ao form após o ter preenchido. Nesta fase já chega informação ao servidor web e o PHP tem a estrutura `$_POST`com a informação necessária.
 
+>[!tipo] Sanitizing?
+> Porque estamos a ler a informação com recurso à função `mysqli_real_rescape_string`? Por uma questão de segurança, o input do utilizador deve ser "limpo" de evitar eventuais vulnerabilidades.
 ## Escrita de ficheiros
 
 A escrita em ficheiros no servidor é uma forma de persistência de informação. Pegando no exemplo anterior, podemos criar um ficheiro e colocar lá os registos dos utilizadores. Mais tarde este processo será feito utilizando uma base de dados.
@@ -117,6 +119,7 @@ $image = "https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png";
 $target_dir = 'uploads/';
 
 // read values to fill input values (signup moment)
+// or if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 if (isset($_POST['signup'])){
     $name = $_POST["name"];
     $email = $_POST["email"];
