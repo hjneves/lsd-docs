@@ -4,7 +4,7 @@ A informação é codificada e enviada no `body` do pedido http.
 ## Página de signup
 
 Por exemplo, um registo de signup de um novo user, usando o método `post`:
-https://github.com/hjneves/lsd-php-signup
+[https://github.com/hjneves/lsd-php-signup](https://github.com/hjneves/lsd-php-signup)
 
 ```html
 <form method="post" enctype="multipart/form-data">
@@ -37,6 +37,7 @@ Para processar este form de signup no backend vamos ter outro array associativo 
 
 Neste caso, para ler a informação do form em backend :
 ```php
+// or if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 if (isset($_POST['signup'])){
 	$name = mysqli_real_escape_string($_POST["name"]);
 	$email = mysqli_real_escape_string($_POST["email"]);
@@ -102,7 +103,7 @@ $_FILES['my-file']['tmp_name'] - Location of Temporary File on Server
 $_FILES['my-file']['error'] - Any Error Codes Resulting From the File Upload
 ```
 
-* `basename($path)` - obtém o nome do ficheiro num caminho.
+* `basename($path)` - obtém apenas o nome do ficheiro na informação do nome original em `['name']`.
 * `getimagesize($path)`- devolve o tamanho de uma imagem e `false`caso não consiga obter esta informação ou o ficheiro não é uma imagem.
 * `move_uploaded_file($from, $to)`- move uma imagem de uma local para outro. Utilizado para mover o ficheiro carregado do seu local temporário para um local específico no site.
 
