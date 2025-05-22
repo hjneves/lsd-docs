@@ -42,11 +42,13 @@ Notas para o módulo de web development do curso LSD Webdesign & Development.
 * _Entrega_: proposta gráfica (figma), zip do projecto (html, css, js e assets), export da BD, outros ficheiros, breve reflexão crítica. 
 	
 	Para o projeto deverão entregar no mínimo:
+	
 	* Página principal do website (mobile e desktop)
 	* Uma segunda página do projeto dinâmica (mobile e desktop)
 	- Modelos de dados do projeto (export da BD)
 	
 	Serão valorizados os trabalhos que incluam:
+	
 	- Página backoffice para inserção de dados (ex. inserção novo trabalho num portfolio)
 	- Mais páginas do website desenvolvidas
 	- Mais páginas dinâmicas
