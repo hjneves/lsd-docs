@@ -60,3 +60,14 @@ Para adicionar página podemos usar o dashboard na secção Pages.
 ![[Pasted image 20231113160935.png]]
 Quando adicionamos uma página ela é automaticamente adicionada ao menu do site. O nome da página é assumido por feito também no menu.
 Se quisermos gerir manualmente o menu de navegação e os respetivos links temos de efetuar estas alteração através do secção Appearance / Editor. Aqui podemos gerir o layout do site e efetuar alterações à sua estrutura. No caso do menu manual podemos ir à seção Navigation e efectuar o detach do mesmo.
+
+## Publicação
+
+Se optar por desenvolver o site num ambiente local, no final será necessário a sua publicação. A maioria dos locais de alojamento de sites já suportam instalações pré-definidas de ambientes wordpress, o que facilita o processo de migração do ambiente local para o ambiente online.
+Existe duas grandes opções:
+1. Uso de um plugin de migração, existem diversos, a maioria num formato fremium, mas sugiro o plugin [# All-in-One WP Migration and Backup](https://wordpress.org/plugins/all-in-one-wp-migration/) 
+2. Realização manual do export da BD e dos ficheiros no webserver. Este passo embora mais manual, na prática, corresponde ao que temos feito até agora:
+	- Através do phpMyAdmin realizar o export da BD onde se encontra instalado o wordpress e exportar todas as definições. Através do modo `custom`e no format `gzip`.
+	- Criar um zip da directoria de instalação do wordpress e copiar para o alojamento
+	- Criar nova BD no site do alojamento através do phpMYAdmin e Importar a BD do wordpress exportada préviamente.
+	- Alterar as configurações do wordpress no ficheiro `wp-config-php`para as novas credenciais
