@@ -1,68 +1,71 @@
-# LSD Web Development
+# LSD Design Web 4.0
 
-Notas para o módulo de web development do curso LSD Webdesign & Development.
+Notas para os seguintes módulos do curso Design Web 4.0
 
 ## Plano de aulas
 
 
-|**Modulo**|**Descritivo**|**Aulas**|**Horas**|
-|---|---|---|---|
-|**Apresentação e setup**|Apresentação e instalação de uma stack de desenvolvimento MAMP|1|4|
-|**Desenvolvimento Frontend**|Desenvolvimento em HTML5/ CSS3|7|28|
-||Framework Bootstrap|2|8
-||Pensamento computacional sequências lógicas, estruturas, controlo de fluxo|1|4|
-||Javascript |5|20|
-||jQuery|3|12|
-|**Desenvolvimento Backend**|Base de dados, SQL e PHP|14|56|
-|**Projecto**|Dúvidas Projecto final|1|4|
-|**Workshops**| Git |2|8|
-|| Wordpress |3|12|
-|**Apresentação Final**|Apresentação do projeto desenvolvido|1|4|
-|||||
-|Total||40|160|
+| **Módulo**                                   | **Descritivo**                                                                                                                      | **Aulas** | **Horas** |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------- | --------- |
+| **M5 — HTML e CSS essencial**                | Fundamentos HTML e CSS, Tipografia, Box model, Grid e Flexbox, responsive layouts, uso de IA para geração código                    | 7         | 28        |
+| **M7 — Bibliotecas CSS e Frameworks**        | Introdução ao Boostrap, componentes, personalização, layouts responsive                                                             | 5         | 20        |
+| **M8 — Animações para Web e exportação SVG** | Introdução, animações css e keyframes, transições. Introdução ao GSAP, animação scroll, animações avançadas, micro-interações UI/UX | 9         | 36        |
+| **M9 — Wordpress para webdesigners**         | Introdução ao WP, configuração, page builders, personalização de layouts, plugins essenciais, SEO                                   | 8         | 32        |
+| **M10 — Projeto Final e Apresentação**       | Apresentações dos projetos finais                                                                                                   | 1         | 4         |
+| Total                                        |                                                                                                                                     | 30        |           |
 
 ## Trabalhos
 
-### Zen Garden
+### Zen Garden (opcional - sugestão treino)
 
-- _Avaliação_: 10%.
-- _Objectivo_: Fazer um layout css para o site [Zen Garden](https://www.csszengarden.com/) apenas com recurso a regras css, sem alterar o html.
+- Quando: Final do módulo 5.
+	- Objectivo: Fazer um layout css para o site [Zen Garden](https://www.csszengarden.com/) apenas com recurso a regras css, sem alterar o html.
 - _Entrega_: proposta gráfica, styles.css e assets gráficos (imagens, vídeos, fontes)
 - _Duração_: 3 semanas (aprox.).
-### Reformulação de site
+### Landing Page (no final do módulo 5)
 
 * _Avaliação_: 20%
-* _Objectivo_: Criar um grupo de 2 ou 3 alunos, escolher um dos sites desatualizados e reformular criando uma nova identidade gráfica.
-* _Entrega_: Proposta layout (figma) e zip do projecto (html, css, js e assets).
-* _Duração_: 4 semanas (aprox.).
+* Quando: Final do módulo 7.
+* _Objectivo_: Criar uma landing page responsive em html e css (podem usar livrarias) de um produto ou serviço.
+* _Entrega_: Zip do projecto (html, css, js e assets).
+* _Duração_: 1 mês (aprox.).
+* Apresentação presencial
+
+### Microsite (no final do modulo 7)
+
+* _Avaliação_: 30%
+* Quando: Final do módulo 8.
+* _Objectivo_: Criar um microsite responsive com cerca de 4 ou 5 páginas, 
+* _Entrega_: Zip do projecto (html, css, js e assets).
+* _Duração_: 1 mês (aprox.).
+* Apresentação presencial
+
 ### Final
 
-* _Avaliação_: 70%
-* _Objectivo_: Criar a presença web de uma marca. Trabalho individual com criação da componente frontend e backend do site, responsive, onde aplique todas as linguagens do curso.
-* _Entrega_: proposta gráfica (figma), zip do projecto (html, css, js e assets), export da BD, outros ficheiros, breve reflexão crítica. 
-	
-	Para o projeto deverão entregar no mínimo:
-	
-	* Página principal do website (mobile e desktop)
-	* Uma segunda página do projeto dinâmica (mobile e desktop)
-	- Modelos de dados do projeto (export da BD)
+* _Avaliação_: 50%
+* _Objectivo_: Criar uma porfolio online com animações e utilização de todas as técnicas aprendidas no decorrer do curso, com base em WordPress
+* _Entrega_: zip do projecto (html, css, js e assets), breve reflexão crítica. 
 	
 	Serão valorizados os trabalhos que incluam:
 	
-	- Página backoffice para inserção de dados (ex. inserção novo trabalho num portfolio)
-	- Mais páginas do website desenvolvidas
-	- Mais páginas dinâmicas
+	- Responsiveness
+	- Utilização de animações e interações
+	- Criatividade
+	- Podem usar livrarias css e js
 	
-* _Duração_: Apresentar no final do curso.
+* _Duração_: 2 meses (aprox.)
+* Apresentação no final do curso.
 
-## Avaliação
+## Avaliação Curso
 
-- Assiduidade e Pontualidade 10%. 
-- Empenho, Motivação e Participação 20%. 
-- Conhecimentos, Capacidades e Competências Adquiridas 30%. 
-- Criatividade, Singularidade e Inovação 40 %. 
+| Item                                                 | Peso |
+| ---------------------------------------------------- | ---- |
+| Assiduidade e Pontualidade                           | 10%  |
+| Empenho, Motivação e Participação                    | 20%  |
+| Conhecimentos, Capacidades e Competências Adquiridas | 30%  |
+| Criatividade, Singularidade e Inovação               | 40%  |
 
 ## Contactos
 Humberto Neves. 
 [Plataforma myLSD](https://my.lsd.pt)      
-Telegram/Whatsapp 934029496. 
+SMS/Signal 934029496. 
