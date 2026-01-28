@@ -4,7 +4,6 @@ Notas para os seguintes módulos do curso Design Web 4.0
 
 ## Plano de aulas
 
-
 | **Módulo**                                   | **Descritivo**                                                                                                                      | **Aulas** | **Horas** |
 | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------- | --------- |
 | **M5 — HTML e CSS essencial**                | Fundamentos HTML e CSS, Tipografia, Box model, Grid e Flexbox, responsive layouts, uso de IA para geração código                    | 7         | 28        |
@@ -22,7 +21,7 @@ Notas para os seguintes módulos do curso Design Web 4.0
 	- Objectivo: Fazer um layout css para o site [Zen Garden](https://www.csszengarden.com/) apenas com recurso a regras css, sem alterar o html.
 - _Entrega_: proposta gráfica, styles.css e assets gráficos (imagens, vídeos, fontes)
 - _Duração_: 3 semanas (aprox.).
-### Landing Page (no final do módulo 5)
+### Landing Page
 
 * _Avaliação_: 20%
 * Quando: Final do módulo 7.
@@ -31,7 +30,7 @@ Notas para os seguintes módulos do curso Design Web 4.0
 * _Duração_: 1 mês (aprox.).
 * Apresentação presencial
 
-### Microsite (no final do modulo 7)
+### Microsite
 
 * _Avaliação_: 30%
 * Quando: Final do módulo 8.
