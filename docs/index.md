@@ -29,6 +29,13 @@ Notas para os seguintes módulos do curso Design Web 4.0
 * _Entrega_: Zip do projecto (html, css, js e assets).
 * _Duração_: 1 mês (aprox.).
 * Apresentação presencial
+#### Guidelines de avaliação
+A avaliação do trabalho será realizada em função dos seguintes critérios:
+
+- Grau de implementação do layout da landing page (mobile e desktop)
+- Nível de aproximação ao layout desenhado
+- Organização da pasta do projeto (ficheiros html, pasta assets, ...)
+- Qualidade do código (estruturação HTML, volume de CSS redundante, etc)
 
 ### Microsite
 
@@ -55,7 +62,7 @@ Notas para os seguintes módulos do curso Design Web 4.0
 * _Duração_: 2 meses (aprox.)
 * Apresentação no final do curso.
 
-## Avaliação Curso
+## Avaliação Final
 
 | Item                                                 | Peso |
 | ---------------------------------------------------- | ---- |
