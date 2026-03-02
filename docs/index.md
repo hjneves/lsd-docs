@@ -30,7 +30,7 @@ Notas para os seguintes módulos do curso Design Web 4.0
 * _Duração_: 1 mês (aprox.).
 * Apresentação presencial
 #### Guidelines de avaliação
-A avaliação do trabalho será realizada em função dos seguintes critérios:
+A avaliação do trabalho será realizada em função dos seguintes critérios, por ordem decrescente de peso:
 
 - Grau de implementação do layout da landing page (mobile e desktop)
 - Nível de aproximação ao layout desenhado
