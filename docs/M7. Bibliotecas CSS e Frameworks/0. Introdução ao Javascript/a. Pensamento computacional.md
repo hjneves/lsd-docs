@@ -1,4 +1,4 @@
-**Pensamento computacional** é um método de resolução de problemas que envolve uma estratégia de decomposição em problemas mais pequenos que sejam de fácil gestão.
+nu**Pensamento computacional** é um método de resolução de problemas que envolve uma estratégia de decomposição em problemas mais pequenos que sejam de fácil gestão.
 É um método que tem por base os seguintes conceitos:
 
 1. Decomposição 
@@ -331,9 +331,9 @@ While loop e for loop
 <script>
 	var friends = ["Ana", "Miguel", "Jaime", "Maria", "Marta"];
 	
-	for (item of friends) {
+	friends.forEach( friend => {
 		console.log( item );
-	}
+	})
 </script>
 ```
 
@@ -348,9 +348,9 @@ While loop e for loop
     <script>
 
         let products = ['vela', 'pilha', 'lápis'];
-        for(item of products) {
-                console.log( '<p>' + item + '</p>' );
-        }
+        products.forEach ( product => {
+                console.log( '<p>' + product + '</p>' );
+        })
 
         </script>
     </head>
@@ -400,6 +400,18 @@ São criadas através do termo `function` ou com a sintaxe `=>`designadas de arr
 
 ```js
  function about(person) {
+	let description =
+	  "Pessoa de nome " +
+	  person.name +
+	  " com " +
+	  person.age +
+	  " anos de idade e profissão " +
+	  person.occupation;
+	return description;
+  }
+   
+   ## --- Arrow function
+   const about = (person) => {
 	let description =
 	  "Pessoa de nome " +
 	  person.name +

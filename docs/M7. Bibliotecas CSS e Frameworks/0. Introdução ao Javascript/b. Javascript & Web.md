@@ -134,7 +134,7 @@ Podemos usar uma função anónima ou uma função normal para associar ao event
 
 <script type="text/javascript">
 
-	document.querySelector("#checkCart").onclick=function() {
+	document.querySelector("#checkCart").onclick= () => {
 	  alert("Hi! You have 5 products on the cart");
 	}
     
@@ -151,12 +151,7 @@ Podemos usar uma função anónima ou uma função normal para associar ao event
     // alternative method
     document.querySelector("#checkCart").onclick=validateCart
     
-    function validateCart() {
-      alert("Hi You don't have any products");
-    }
-
-    // arrow function
-    const validateCart2 = () => {
+    const validateCart = () => {
       alert("Hi You don't have any products");
     }
     
@@ -172,14 +167,14 @@ Neste exemplo, vamos usar o evento `onclick`num botão para executar uma funçã
 <p class="works">Work 2.pdf</p>
 
 <script type="text/javascript">  
-document.querySelector(".submit").onclick = function () {
+document.querySelector(".submit").onclick = () => {
   // get the <p> elements with class works
   let works = document.getElementsByClassName("works")
 
   // Percorrer o array works
-  for (work of works) {
+  works.forEach( (work) => {
 	work.textContent += " (done)"
-  }
+  })
 }
 </script>
 ```
@@ -203,10 +198,10 @@ document.querySelector(".submit").onclick = function () {
   let works = document.getElementsByClassName("works")
 
   // Percorrer o array works
-  for (work of works) {
+  works.forEach( work => {
 	work.textContent += " (done)"
 	work.style.color = "green"
-  }
+  })
 }
 </script>
 ```
@@ -271,11 +266,11 @@ Neste exercício queremos simular a criação de 2 temas para uma página: noite
 </ul>
 
 <script type="text/javascript">
-  document.querySelector(".night").onclick = function () {
+  document.querySelector(".night").onclick = () => {
 	document.body.style.backgroundColor = "black";
 	document.body.style.color = "white";
   };
-  document.querySelector(".day").onclick = function () {
+  document.querySelector(".day").onclick = () => {
 	document.body.style.backgroundColor = "white";
 	document.body.style.color = "black";
   };
@@ -307,7 +302,7 @@ Neste exemplo estamos a atualizar um heading com a data atual. A data atual é o
  <button id="myBtn">Submit</button>
 
   <script type="text/javascript">
-    document.getElementById("myBtn").onclick = function () {
+    document.getElementById("myBtn").onclick = () => {
       document.getElementById('myDay').innerHTML =  new Date();
     }
   </script>
@@ -336,7 +331,7 @@ Pegando no mesmo exemplo anterior podemos então format a data por exemplo : 4-N
  <button id="myBtn">Submit</button>
 
   <script type="text/javascript">
-    document.getElementById("myBtn").onclick = function () {
+    document.getElementById("myBtn").onclick = () => {
       document.getElementById('myDay').innerHTML = dayjs().format(
 "D-MMMM-YYYY";
     }
@@ -371,7 +366,7 @@ Estamos a atribuir uma função ao evento `onsubmit` para efetuar a validação 
 <script type="text/javascript">
   let status = document.querySelector(".status");
 
-  document.querySelector(".subscribe").onsubmit = function (e) {
+  document.querySelector(".subscribe").onsubmit = (e) => {
 	let email = document.querySelector(".newsletter").value;
 	if (email.trim() === "" || email.search('lsd.pt') < 0) {
 	  status.textContent = "Email LSD inválido";
@@ -416,11 +411,11 @@ src="https://img1.g-star.com/product/c_fill,f_auto,h_1000,q_80/v1654100185/51003
   // - create an option
   // - set color of option with innerHTML
   // - assign option as child of select
-  for (color of colors) {
+  colors.forEach( color => {
 	let option = document.createElement("option");
 	option.textContent = color;
 	select.appendChild(option);
-  }
+  })
 ```
 
 
