@@ -23,44 +23,63 @@ Notas para os seguintes módulos do curso Design Web 4.0
 - _Duração_: 3 semanas (aprox.).
 ### Landing Page
 
-* _Avaliação_: 20%
+* _Avaliação_: 30%
 * Quando: Final do módulo 7.
 * _Objectivo_: Criar uma landing page responsive em html e css (podem usar livrarias) de um produto ou serviço.
-* _Entrega_: Zip do projecto (html, css, js e assets).
+* _Entrega_: 
+	* Zip do projecto (html, css, js e assets) 
+	* Link figma
 * _Duração_: 1 mês (aprox.).
 * Apresentação presencial
 #### Guidelines de avaliação
 A avaliação do trabalho será realizada em função dos seguintes critérios, por ordem decrescente de peso:
 
-- Grau de implementação do layout da landing page (mobile e desktop)
+- Grau de implementação do layout (mobile e desktop)
+- Nível de responsiveness
 - Nível de aproximação ao layout desenhado
 - Organização da pasta do projeto (ficheiros html, pasta assets, ...)
 - Qualidade do código (estruturação HTML, volume de CSS redundante, etc)
 
 ### Microsite
 
-* _Avaliação_: 30%
+* _Avaliação_: 20%
 * Quando: Final do módulo 8.
-* _Objectivo_: Criar um microsite responsive com cerca de 4 ou 5 páginas, 
-* _Entrega_: Zip do projecto (html, css, js e assets).
+* _Objectivo_: Criar um microsite responsive com cerca de 4 ou 5 páginas (versão mobile ou desktop)
+* _Entrega_: 
+	* Zip do projecto (html, css, js e assets) 
+	* Link Figma
 * _Duração_: 1 mês (aprox.).
+* Trabalho individual ou a pares
 * Apresentação presencial
+#### Guidelines de avaliação
+A avaliação do trabalho será realizada em função dos seguintes critérios, por ordem decrescente de peso:
 
+- Grau de implementação do layout (mobile ou desktop)
+- Nível de aproximação ao layout desenhado
+- Transições e Animações GSAP
+- Navegação do microsite
+- Organização da pasta do projeto (ficheiros html, pasta assets, ...)
+- Qualidade do código (estruturação HTML, volume de CSS redundante, etc)
 ### Final
 
 * _Avaliação_: 50%
 * _Objectivo_: Criar uma porfolio online com animações e utilização de todas as técnicas aprendidas no decorrer do curso, com base em WordPress
-* _Entrega_: zip do projecto (html, css, js e assets), breve reflexão crítica. 
-	
-	Serão valorizados os trabalhos que incluam:
-	
-	- Responsiveness
-	- Utilização de animações e interações
-	- Criatividade
-	- Podem usar livrarias css e js
-	
+* _Entrega_: 
+	* zip do projecto (html, css, js e assets) 
+	* Link Figma 
+	* Breve reflexão crítica. 
 * _Duração_: 2 meses (aprox.)
 * Apresentação no final do curso.
+#### Guidelines de avaliação
+A avaliação do trabalho será realizada em função dos seguintes critérios, por ordem decrescente de peso:
+
+- Grau de implementação do layout (mobile e desktop)
+- Nível de aproximação ao layout desenhado
+- Nível de responsiveness
+- Transições e Animações GSAP
+- Navegação do microsite
+- Organização da pasta do projeto (ficheiros html, pasta assets, ...)
+- Qualidade do código (estruturação HTML, volume de CSS redundante, etc)
 
 ## Avaliação Final
 
